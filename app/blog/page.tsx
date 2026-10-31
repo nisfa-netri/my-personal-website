@@ -1,4 +1,4 @@
-import TombolBeranda from "../TombolBeranda";
+import TombolBeranda from "@/components/tombol-beranda";
 import Link from "next/link";
 
 export default function BlogPage() {
