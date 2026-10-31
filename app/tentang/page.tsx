@@ -1,3 +1,5 @@
+import TombolBeranda from "@/components/tombol-beranda";
+
 export default function TentangPage() {
   return (
     <main className="tentang">
@@ -8,8 +10,8 @@ export default function TentangPage() {
       <p>Halo, saya Nisfa.</p>
 
       <p>
-        Saya seorang ibu yang baru saja resign dari perusahaan Semen untuk fokus
-        mengurus keluarga{" "}
+        Saya seorang ibu yang baru saja resign dari perusahaan Semen untuk fokus mengurus
+        keluarga{" "}
       </p>
 
       <p>Saat ini saya sedang belajar pemrograman web dengan Next.js .</p>
@@ -23,6 +25,8 @@ export default function TentangPage() {
       </ul>
 
       <p>Terima kasih sudah berkunjung!</p>
+
+      <TombolBeranda />
     </main>
   );
 }
