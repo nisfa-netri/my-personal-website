@@ -30,6 +30,14 @@ export default function Navbar() {
       <Link href="/blog" style={linkStyle("/blog")}>
         Blog
       </Link>
+
+      <Link href="/demo" style={linkStyle("/demo")}>
+        Demo
+      </Link>
+
+      <Link href="/alat" style={linkStyle("/alat")}>
+        Alat Konversi Suhu
+      </Link>
     </nav>
   );
 }

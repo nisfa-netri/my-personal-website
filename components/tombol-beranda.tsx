@@ -10,7 +10,7 @@ export default function TombolBeranda() {
       onClick={() => router.push("/")}
       className="rounded-lg bg-blue-600 px-4 py-2 text-white hover:bg-blue-700"
     >
-      Kembali ke Beranda
+      Beranda
     </button>
   );
 }

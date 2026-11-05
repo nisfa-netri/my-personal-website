@@ -25,7 +25,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 .tentang,
-.kontak {
+.kontak,
+.demo,
+.alat {
   max-width: 700px;
   margin: 40px auto;
   padding: 0 20px;
@@ -34,7 +36,9 @@ body {
 }
 
 .tentang .judul,
-.kontak .judul {
+.kontak .judul,
+.demo .judul,
+.alat .judul {
   font-size: 40px;
   text-align: center;
 }

@@ -1,3 +1,5 @@
+import TombolBlog from "./tombol-blog";
+import LikeButton from "./like-button";
 export const instant = false;
 export default async function TulisanPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -23,6 +25,8 @@ export default async function TulisanPage({ params }: { params: Promise<{ slug: 
     <main className="mx-auto max-w-3xl px-6 py-12">
       <h1 className="text-3xl font-bold">{judul}</h1>
       <p className="mt-4">{paragraf}</p>
+      <LikeButton slug={slug} />
+      <TombolBlog />
     </main>
   );
 }
