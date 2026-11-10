@@ -1,5 +1,5 @@
-import TombolBlog from "./tombol-blog";
-import LikeButton from "./like-button";
+import TombolBlog from "./_components/tombol-blog";
+import LikeButton from "../_components/like-button";
 export const instant = false;
 export default async function TulisanPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;

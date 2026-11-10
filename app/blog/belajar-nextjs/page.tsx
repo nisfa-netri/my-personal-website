@@ -1,5 +1,5 @@
 import Link from "next/link";
-import TombolBlog from "../[slug]/tombol-blog";
+import TombolBlog from "../[slug]/_components/tombol-blog";
 export default function BelajarNextjsPage() {
   return (
     <main className="mx-auto max-w-3xl px-6 py-12">

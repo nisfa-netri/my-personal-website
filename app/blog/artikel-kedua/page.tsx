@@ -1,5 +1,5 @@
-import TombolBlog from "../[slug]/tombol-blog";
-import LikeButton from "../[slug]/like-button";
+import TombolBlog from "../[slug]/_components/tombol-blog";
+import LikeButton from "../_components/like-button";
 export default function ArtikelKeduaPage() {
   return (
     <main className="mx-auto max-w-2xl p-8">

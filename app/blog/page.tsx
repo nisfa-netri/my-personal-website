@@ -1,6 +1,6 @@
 import TombolBeranda from "@/components/tombol-beranda";
-import DaftarTulisan from "./daftar-tulisan";
-import LikeButton from "./[slug]/like-button";
+import DaftarTulisan from "./_components/daftar-tulisan";
+import LikeButton from "./_components/like-button";
 const TULISAN = ["belajar-nextjs", "hal-baru", "target-tahun-ini"];
 
 export default function BlogPage() {
