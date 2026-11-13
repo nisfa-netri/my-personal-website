@@ -1,3 +1,4 @@
+import TombolFavorit from "@/components/tombol-favorit";
 import TombolBeranda from "@/components/tombol-beranda";
 import DaftarTulisan from "./_components/daftar-tulisan";
 import LikeButton from "./_components/like-button";
@@ -12,6 +13,7 @@ export default function BlogPage() {
         <DaftarTulisan daftar={TULISAN} />
       </div>
       <LikeButton slug="belajar-nextjs" />
+      <TombolFavorit slug="belajar-nextjs" />
       <TombolBeranda />
     </main>
   );

@@ -1,3 +1,4 @@
+import TombolFavorit from "@/components/tombol-favorit";
 import TombolBlog from "./_components/tombol-blog";
 import LikeButton from "../_components/like-button";
 export const instant = false;
@@ -26,6 +27,7 @@ export default async function TulisanPage({ params }: { params: Promise<{ slug: 
       <h1 className="text-3xl font-bold">{judul}</h1>
       <p className="mt-4">{paragraf}</p>
       <LikeButton slug={slug} />
+      <TombolFavorit slug={slug} />
       <TombolBlog />
     </main>
   );

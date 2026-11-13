@@ -12,11 +12,9 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 body {
@@ -31,7 +29,7 @@ body {
   max-width: 700px;
   margin: 40px auto;
   padding: 0 20px;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.7;
 }
 
@@ -39,18 +37,18 @@ body {
 .kontak .judul,
 .demo .judul,
 .alat .judul {
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
 }
 
 .tentang h2,
 .kontak h2 {
-  font-size: 26px;
+  font-size: 20px;
 }
 
 .tentang p,
 .tentang li,
 .kontak p,
 .kontak li {
-  font-size: 18px;
+  font-size: 14px;
 }
