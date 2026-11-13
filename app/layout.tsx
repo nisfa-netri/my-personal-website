@@ -1,17 +1,11 @@
+import Menu from "@/components/menu";
+import { FavoritProvider } from "@/context/favorit-context";
+import { TemaProvider } from "@/context/tema-context";
+import Header from "@/components/header";
 import { Suspense } from "react";
 import Navbar from "@/components/navbar";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Website Belajarku",
@@ -23,13 +17,21 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const namaUser = "Nisfa";
+
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
+    <html lang="id" className="h-full antialiased">
       <body className="min-h-full flex flex-col">
-        <Suspense fallback={null}>
-          <Navbar />
-        </Suspense>
-        {children}
+        <TemaProvider>
+          <Suspense fallback={null}>
+            <Navbar />
+          </Suspense>
+          <Header namaUser={namaUser} />
+          <FavoritProvider>
+            <Menu />
+            {children}
+          </FavoritProvider>
+        </TemaProvider>
       </body>
     </html>
   );

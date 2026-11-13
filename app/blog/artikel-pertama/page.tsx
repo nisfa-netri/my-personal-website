@@ -1,3 +1,4 @@
+import TombolFavorit from "@/components/tombol-favorit";
 import LikeButton from "../_components/like-button";
 import TombolBlog from "../[slug]/_components/tombol-blog";
 export default function ArtikelPertamaPage() {
@@ -7,6 +8,7 @@ export default function ArtikelPertamaPage() {
       <p className="mt-4">Alamatnya /blog/artikel-pertama — dua tingkat di dalam app/.</p>
 
       <LikeButton slug="belajar-nextjs" />
+      <TombolFavorit slug="artikel-pertama" />
       <TombolBlog />
     </main>
   );

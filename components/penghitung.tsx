@@ -6,8 +6,8 @@ export default function Penghitung() {
   const [jumlah, setJumlah] = useState(0);
 
   return (
-    <main className="flex flex-col items-center pt-20">
-      <h1 className="mb-4 text-3xl font-bold">Penghitung</h1>
+    <div className="flex flex-col items-start pt-0">
+      <h1 className="mb-4 text-2xl font-bold">Penghitung</h1>
 
       <p className="mb-4 text-xl">Jumlah: {jumlah}</p>
 
@@ -30,6 +30,6 @@ export default function Penghitung() {
           Ulangi dari nol
         </button>
       </div>
-    </main>
+    </div>
   );
 }

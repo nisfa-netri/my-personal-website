@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 export default function Jam() {
-  const [waktu, setWaktu] = useState(new Date());
+  const [waktu, setWaktu] = useState<Date | null>(null);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -12,6 +12,10 @@ export default function Jam() {
 
     return () => clearInterval(timer);
   }, []);
+
+  if (waktu === null) {
+    return <p>Memuat jam...</p>;
+  }
 
   return <p>Sekarang pukul {waktu.toLocaleTimeString("id-ID")}</p>;
 }
